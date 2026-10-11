@@ -1,0 +1,9 @@
+// Cloudflare Workers (statische Assets): die Website liegt im Repo-Stamm, .assetsignore schließt .git & Co. aus
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "fahrendholz-heiermann-website",
+  "compatibility_date": "2026-10-06",
+  "assets": {
+    "directory": "."
+  }
+}

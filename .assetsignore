@@ -1,0 +1,9 @@
+# nicht als Website ausliefern
+.git
+.gitignore
+.gitattributes
+.assetsignore
+.wrangler
+wrangler.jsonc
+README.md
+node_modules
