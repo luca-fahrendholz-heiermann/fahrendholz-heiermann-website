@@ -2,7 +2,15 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- als App installierbar: ohne Adressleiste vom Home-Bildschirm (Android: Manifest, iOS: Apple-Tags) -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#070a0f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="X-AVIS" />
+    <link rel="apple-touch-icon" href="media/icon-180.png" />
     <title>X-AVIS · 3D Operation System</title>
     <meta name="description" content="X-AVIS – Spatial &amp; Multimodal AI: vom Scan und vom Dokument zur Entscheidung. Neun Use Cases von der Vorfertigung bis zur Smart City." />
     <meta name="author" content="Jan Luca Fahrendholz-Heiermann" />
@@ -455,6 +463,12 @@
       .lab-flip { align-self: flex-start; background: rgba(255,255,255,0.05); color: #c4cedb; border: 1px solid rgba(255,255,255,0.15); border-radius: 7px; padding: 4px 9px; font: 600 11.5px Inter, sans-serif; cursor: pointer; }
       .lab-nbv { position: absolute; left: 0; top: 0; display: none; background: #ff9a3d; color: #1a1406; font: 800 11.5px "JetBrains Mono", monospace; padding: 3px 8px; border-radius: 8px; white-space: nowrap; box-shadow: 0 0 14px rgba(255,154,61,0.5); }
       .lab-touch .lab-optstack { left: 8px; right: 8px; transform: none; bottom: calc(max(22px, env(safe-area-inset-bottom)) + 150px); }
+      .lab .lab-rotate { inset: 0; z-index: 11; background: rgba(4,6,10,0.94); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px; text-align: center; }
+      .lab-rotate-i { font-size: 54px; animation: labrot 2.2s ease-in-out infinite; }
+      @keyframes labrot { 0%, 25% { transform: rotate(0deg); } 55%, 80% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
+      .lab-rotate b { font-size: 22px; }
+      .lab .lab-rotate .lab-flip { align-self: center; }
+      .lab-rotate span { color: #9aa7b8; font-size: 14px; line-height: 1.5; max-width: 320px; }
       .nav-lab { color: #5ce1e6 !important; border: 1px solid rgba(92,225,230,0.5); border-radius: 999px; padding: 5px 12px; }
       .lab-enter { background: linear-gradient(90deg, #5ce1e6, #9b8cff) !important; color: #071017 !important; border-color: transparent !important; box-shadow: 0 0 24px rgba(92,225,230,0.45); }
       .lab { position: fixed; inset: 0; z-index: 50; overflow: hidden; font-family: Inter, system-ui, sans-serif; color: #e8eef5; background: #04060a; user-select: none; }
