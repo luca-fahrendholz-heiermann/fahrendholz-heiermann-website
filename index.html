@@ -224,6 +224,35 @@
       .kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
       .kw-list span { font-size: 14.5px; font-weight: 600; border: 1px solid var(--line2); border-radius: 999px; padding: 6px 13px; background: rgba(13,18,26,0.9); }
       .kw-list span:hover { border-color: var(--acc); color: #fff; }
+      .gen-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 18px; }
+      .gen-card { border: 1.5px solid; border-radius: 16px; padding: 20px; background: rgba(13,18,26,0.92); display: flex; flex-direction: column; gap: 8px; }
+      .gen-card small { font: 600 12px "JetBrains Mono"; letter-spacing: 1.5px; text-transform: uppercase; }
+      .gen-card h3 { font-size: 19px; line-height: 1.3; }
+      .gen-io { display: grid; grid-template-columns: 96px 1fr; gap: 6px 12px; margin: 4px 0 0; font-size: 14.5px; line-height: 1.5; }
+      .gen-io dt { font: 600 12px "JetBrains Mono"; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; padding-top: 3px; }
+      .gen-io dd { margin: 0; color: var(--muted); }
+      .gen-src { margin-top: auto; padding-top: 6px; font: 500 12px "JetBrains Mono"; color: var(--dim); }
+      .gen-h { font-size: 22px; margin: 34px 0 14px; }
+      .gen-mx-wrap { overflow-x: auto; border: 1px solid var(--line2); border-radius: 14px; background: rgba(13,18,26,0.92); }
+      .gen-mx { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+      .gen-mx th { text-align: left; font: 600 12px "JetBrains Mono"; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; padding: 12px 14px; border-bottom: 1px solid var(--line2); white-space: nowrap; }
+      .gen-mx td { padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--muted); }
+      .gen-mx tr:last-child td { border-bottom: 0; }
+      .gen-mx td:first-child { font: 700 14px "JetBrains Mono"; white-space: nowrap; }
+      .gen-dots { display: inline-flex; gap: 4px; }
+      .gen-dots i { width: 11px; height: 11px; border-radius: 11px; border: 1.5px solid var(--line2); }
+      .gen-fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 6px 0 24px; }
+      .gen-fit div { border: 1px solid var(--line2); border-left: 4px solid; border-radius: 12px; padding: 14px 16px; background: rgba(13,18,26,0.9); }
+      .gen-fit b { display: block; font-size: 16px; }
+      .gen-tech { display: block; font: 600 12.5px "JetBrains Mono"; margin: 4px 0 6px; }
+      .gen-fit p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+      .ex-sub { color: var(--muted); font-size: 16px; line-height: 1.6; max-width: 1100px; }
+      .ex-sub a, .refs a { color: var(--acc); }
+      .ex-refs { margin-top: 18px; }
+      .ex-refs h4 { margin: 0 0 8px; font: 600 12.5px "JetBrains Mono"; color: var(--dim); letter-spacing: 1.5px; text-transform: uppercase; }
+      .refs { margin: 0; padding-left: 22px; columns: 2 520px; column-gap: 34px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
+      .refs li { break-inside: avoid; margin-bottom: 6px; }
+      .refs b { color: var(--txt); font-weight: 600; }
       .talks { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 22px; }
       .talk { display: grid; grid-template-columns: 200px 1fr; gap: 18px; border: 1px solid var(--line2); border-radius: 16px; padding: 14px; background: rgba(13,18,26,0.92); transition: border-color .2s, transform .2s; }
       .talk:hover { border-color: var(--acc); transform: translateY(-2px); }
@@ -656,7 +685,7 @@
         .hdr { padding: 10px 16px; } nav { gap: 14px; font-size: 13px; } nav a { display: none; }
         .hero-txt { left: 20px; right: 20px; bottom: 40px; } .hero h1 { font-size: 28px; }
         .sec, .ucp { padding-left: 18px; padding-right: 18px; } .uc-body { grid-template-columns: 1fr; } .uc-head { flex-direction: column; align-items: flex-start; }
-        .about { flex-direction: column; text-align: center; } h2 { font-size: 28px; } .field, .cv, .caps, .vc, .ex-fund, .ex-kritis, .talks { grid-template-columns: 1fr; } .talk { grid-template-columns: 110px 1fr; } .gallery.g4 { grid-template-columns: 1fr 1fr; } .ex-toc { top: 52px; } .gallery { grid-template-columns: 1fr 1fr; }
+        .about { flex-direction: column; text-align: center; } h2 { font-size: 28px; } .field, .cv, .caps, .vc, .ex-fund, .ex-kritis, .talks, .gen-grid { grid-template-columns: 1fr; } .gen-io { grid-template-columns: 1fr; } .talk { grid-template-columns: 110px 1fr; } .gallery.g4 { grid-template-columns: 1fr 1fr; } .ex-toc { top: 52px; } .gallery { grid-template-columns: 1fr 1fr; }
       }
     </style>
   </head>
