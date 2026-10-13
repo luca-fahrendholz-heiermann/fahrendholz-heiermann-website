@@ -82,6 +82,16 @@
       .art-tabs button { background: transparent; color: var(--muted); border: 1.5px solid var(--line2); border-radius: 999px; padding: 7px 14px; font: 600 14px Inter; cursor: pointer; }
       .art-tabs button.on { color: #fff; border-color: var(--acc); background: rgba(77,166,255,0.14); }
       .art-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px 14px; font-size: 14px; }
+      .ui-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 22px 0 12px; }
+      .ui-step { border: 1px solid var(--line2); border-radius: 14px; padding: 14px 16px; background: rgba(13,18,26,0.9); }
+      .ui-step b { font: 800 15px "JetBrains Mono"; color: #5ce1e6; border: 1.5px solid #5ce1e6; border-radius: 7px; padding: 0 7px; }
+      .ui-step h4, .ui-gain h4 { margin: 10px 0 6px; font-size: 16px; }
+      .ui-step p, .ui-gain p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+      .ui-gain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+      .ui-gain > div { border: 1.5px solid; border-radius: 14px; padding: 12px 16px; background: rgba(13,18,26,0.9); }
+      .ui-gain h4 { margin-top: 2px; }
+      @media (max-width: 900px) { .ui-steps, .ui-gain { grid-template-columns: 1fr 1fr; } }
+      .art-jump { background: transparent; border: 1px solid; border-radius: 7px; padding: 2px 8px; font: 700 12.5px "JetBrains Mono"; cursor: pointer; }
       .art-cap .dim { color: var(--dim); font-size: 12.5px; }
       .art-play { background: transparent; border: 1.5px solid; border-radius: 10px; padding: 7px 12px; font: 700 14px Inter; cursor: pointer; margin: 0 0 12px; }
       .used { font-size: 13px; color: var(--dim); display: flex; gap: 8px; flex-wrap: wrap; }
