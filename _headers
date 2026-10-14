@@ -4,3 +4,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /lab/*
   Cache-Control: public, max-age=86400
+/media/art_full_de.m3u8
+  Content-Type: application/vnd.apple.mpegurl
+/media/art_full_en.m3u8
+  Content-Type: application/vnd.apple.mpegurl

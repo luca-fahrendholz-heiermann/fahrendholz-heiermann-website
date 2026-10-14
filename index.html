@@ -138,7 +138,9 @@
       .pub b { display: block; font-weight: 600; font-size: 15.5px; line-height: 1.4; }
       .pub small { color: var(--dim); font-size: 13px; }
       .vc { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 34px; align-items: center; }
-      .vc-svg { width: 100%; max-width: 760px; overflow: visible; }
+      .vc-svg { width: 100%; max-width: 760px; overflow: visible; display: block; }
+      .vc-stage { position: relative; width: 100%; max-width: 760px; }
+      .vc-core { position: absolute; pointer-events: none; }
       .vc-flow { animation: vcflow 6s linear infinite; }
       @keyframes vcflow { to { stroke-dashoffset: -160; } }
       .vc-pulse { animation: vcflow 2.5s linear infinite reverse; }
@@ -701,6 +703,13 @@
         .sec, .ucp { padding-left: 18px; padding-right: 18px; } .uc-body { grid-template-columns: 1fr; } .uc-head { flex-direction: column; align-items: flex-start; }
         .about { flex-direction: column; text-align: center; } h2 { font-size: 28px; } .field, .cv, .caps, .vc, .ex-fund, .ex-kritis, .talks, .gen-grid { grid-template-columns: 1fr; } .gen-io { grid-template-columns: 1fr; } .talk { grid-template-columns: 110px 1fr; } .gallery.g4 { grid-template-columns: 1fr 1fr; } .ex-toc { top: 52px; } .gallery { grid-template-columns: 1fr 1fr; }
       }
+      /* Quellen- und Bildnachweise (Credits) */
+      .fcredit { display: block; margin-top: 3px; font-size: 11.5px; color: var(--dim); opacity: .85; font-style: italic; }
+      .lb-credit { display: block; margin-top: 4px; font-size: 13px; color: #9aa7b6; font-style: italic; }
+      .ex-fund p.ex-src, .ex-art p.ex-src { margin-top: 10px; font-size: 12.5px; line-height: 1.45; color: var(--dim); }
+      .talk-org { color: var(--muted); font-size: 12.5px; margin: -4px 0 8px; }
+      .talk-credit { margin-top: 8px; font-size: 11.5px; color: var(--dim); font-style: italic; }
+      .talk-photonote { margin-top: 18px; }
     </style>
   </head>
   <body>
